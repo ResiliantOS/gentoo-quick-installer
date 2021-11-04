@@ -1,15 +1,13 @@
 #!/bin/sh
 
 ##
-# GENTOO QUICK INSTALLER
-#
-# Read more: http://www.artembutusov.com/gentoo-linux-quick-installer-script/
+# GENTOO RESILIANT INSTALLER
 #
 # Usage:
 #
 # export OPTION1=VALUE1
 # export OPTION2=VALUE2
-# ./gentoo-quick-installer.sh
+# ./gentoo-resiliant.sh
 #
 # Options:
 #
@@ -32,10 +30,10 @@ TARGET_SWAP_SIZE=1G
 
 GRUB_PLATFORMS=pc
 
-USE_LIVECD_KERNEL=${USE_LIVECD_KERNEL:-1}
+USE_LIVECD_KERNEL=${USE_LIVECD_KERNEL:-0}
 
 SSH_PUBLIC_KEY=${SSH_PUBLIC_KEY:-}
-ROOT_PASSWORD=${ROOT_PASSWORD:-}
+ROOT_PASSWORD=${ROOT_PASSWORD:-toor}
 
 echo "### Checking configuration..."
 
